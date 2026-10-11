@@ -1,3 +1,16 @@
+P02
+<img width="928" height="303" alt="Screenshot 2026-10-04 215850" src="https://github.com/user-attachments/assets/aee96670-6df7-4dba-a6c3-e5751c3b5bb1" />
+Jawaban dari eksperimen praktikum 6
+1. Muncul pesan error: Koleksi is abstract; cannot be instantiated, karena koleksi dideklarasikan abstract, dan class abstract tidak boleh dibuat objeknya langsung dengan new. Class abstract hanya berfungsi sebagai kerangka untuk diturunkan. Itu masuk akal karena tidak ada koleksi yang "hanya koleksi". Pasti berupa Buku, Majalah, atau Skripsi.
+2. Dengan @Override, ada 2 error:
+- Buku is not abstract and does not override abstract method hitungDenda(int) in BisaDipinjam 
+- method does not override or implement a method from a supertype
+Tanpa @Override hanya  1 error:
+- Buku is not abstract and does not override abstract method hitungDenda(int) in BisaDipinjam
+3. Program berhenti saat dijalankan (kompilasi berhasil)
+4. Aturan yang dilanggar adalah encapsulation (enkapsulasi)
+
+P03
 <img width="668" height="500" alt="Screenshot 2026-10-04 143614" src="https://github.com/user-attachments/assets/53bea020-a638-4d1b-8b2f-4be0d6070cf8" />
 <img width="674" height="499" alt="Screenshot 2026-10-04 143622" src="https://github.com/user-attachments/assets/df52e712-69b6-4f23-849c-8131d990c362" />
 <img width="351" height="389" alt="Screenshot 2026-10-04 143712" src="https://github.com/user-attachments/assets/39e88234-7d16-4a4a-a1e0-2c96cfeb0815" />
