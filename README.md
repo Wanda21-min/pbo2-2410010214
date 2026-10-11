@@ -1,3 +1,9 @@
+P01
+<img width="617" height="194" alt="Screenshot 2026-09-27 100714" src="https://github.com/user-attachments/assets/eed571d0-323a-4e52-9aab-c9baebf0da24" />
+<img width="623" height="234" alt="Screenshot 2026-09-27 103459" src="https://github.com/user-attachments/assets/ee2f28b5-958b-4220-9097-15cb8f5b77c5" />
+<img width="860" height="113" alt="Screenshot 2026-09-27 104724" src="https://github.com/user-attachments/assets/d17f404d-d961-4404-a922-51ad36713649" />
+
+
 P02
 <img width="928" height="303" alt="Screenshot 2026-10-04 215850" src="https://github.com/user-attachments/assets/aee96670-6df7-4dba-a6c3-e5751c3b5bb1" />
 Jawaban dari eksperimen praktikum 6
