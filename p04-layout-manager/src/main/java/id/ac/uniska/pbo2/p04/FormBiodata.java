@@ -18,7 +18,7 @@ public class FormBiodata extends javax.swing.JFrame {
         getRootPane().setDefaultButton(simpanButton);
         
         pack(); // hitung ulang ukuran setelah gaya huruf berubah
-         // jendela tidak dapat dikecilkan melebihi ukuran awal
+        setMinimumSize(getSize()); // jendela tidak dapat dikecilkan melebihi ukuran awal
         setLocationRelativeTo(null);
     }
 

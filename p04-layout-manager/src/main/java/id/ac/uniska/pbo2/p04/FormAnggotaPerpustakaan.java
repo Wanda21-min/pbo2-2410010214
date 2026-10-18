@@ -13,7 +13,7 @@ public class FormAnggotaPerpustakaan extends javax.swing.JFrame {
         // gaya huruf FlatLaf, placeholder, dan tombol default
         judulLabel.putClientProperty("FlatLaf.styleClass", "h2");
         keteranganLabel.putClientProperty("FlatLaf.style", "foreground: $Label.disabledForeground");
-        dataDiriLabel.putClientProperty("FlatLaf.styleClass", "h4");
+        dataAnggotaLabel.putClientProperty("FlatLaf.styleClass", "h4");
         kontakLabel.putClientProperty("FlatLaf.styleClass", "h4");
         persetujuanLabel.putClientProperty("FlatLaf.styleClass", "h4");
         emailField.putClientProperty("JTextField.placeholderText", "nama@www.com");
@@ -35,7 +35,7 @@ public class FormAnggotaPerpustakaan extends javax.swing.JFrame {
         keteranganLabel = new javax.swing.JLabel();
         isiPanel = new javax.swing.JPanel();
         formPanel = new javax.swing.JPanel();
-        dataDiriLabel = new javax.swing.JLabel();
+        dataAnggotaLabel = new javax.swing.JLabel();
         npmLabel = new javax.swing.JLabel();
         npmField = new javax.swing.JTextField();
         namaLabel = new javax.swing.JLabel();
@@ -81,15 +81,15 @@ public class FormAnggotaPerpustakaan extends javax.swing.JFrame {
         formPanel.setBorder(javax.swing.BorderFactory.createEmptyBorder(8, 16, 8, 16));
         formPanel.setLayout(new java.awt.GridBagLayout());
 
-        dataDiriLabel.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
-        dataDiriLabel.setText("Data Anggota");
+        dataAnggotaLabel.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        dataAnggotaLabel.setText("Data Anggota");
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 0;
         gridBagConstraints.gridy = 0;
         gridBagConstraints.gridwidth = 2;
         gridBagConstraints.anchor = java.awt.GridBagConstraints.WEST;
         gridBagConstraints.insets = new java.awt.Insets(0, 0, 6, 0);
-        formPanel.add(dataDiriLabel, gridBagConstraints);
+        formPanel.add(dataAnggotaLabel, gridBagConstraints);
 
         npmLabel.setLabelFor(npmField);
         npmLabel.setText("NPM");
@@ -296,7 +296,7 @@ public class FormAnggotaPerpustakaan extends javax.swing.JFrame {
     private javax.swing.JScrollPane alamatScroll;
     private javax.swing.JButton batalButton;
     private javax.swing.JButton daftarButton;
-    private javax.swing.JLabel dataDiriLabel;
+    private javax.swing.JLabel dataAnggotaLabel;
     private javax.swing.JRadioButton dosenRadio;
     private javax.swing.JTextField emailField;
     private javax.swing.JLabel emailLabel;
