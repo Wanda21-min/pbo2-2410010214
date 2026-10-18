@@ -7,6 +7,7 @@
 
 
 ## P02
+### Kode dibantu AI
 ### Hasil Program:
 
 <img width="928" height="303" alt="Screenshot 2026-10-04 215850" src="https://github.com/user-attachments/assets/aee96670-6df7-4dba-a6c3-e5751c3b5bb1" />
