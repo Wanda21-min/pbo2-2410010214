@@ -18,7 +18,7 @@ public class FormBiodata extends javax.swing.JFrame {
         getRootPane().setDefaultButton(simpanButton);
         
         pack(); // hitung ulang ukuran setelah gaya huruf berubah
-        setMinimumSize(getSize()); // jendela tidak dapat dikecilkan melebihi ukuran awal
+         // jendela tidak dapat dikecilkan melebihi ukuran awal
         setLocationRelativeTo(null);
     }
 
@@ -243,7 +243,7 @@ public class FormBiodata extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     public static void main(String args[]) {
-        // Blok Nimbus buatan NetBeans diganti dengan tema FlatLaf
+        
         FlatLightLaf.setup();
         // Tampilkan form di Event Dispatch Thread
         java.awt.EventQueue.invokeLater(() -> new FormBiodata().setVisible(true));
