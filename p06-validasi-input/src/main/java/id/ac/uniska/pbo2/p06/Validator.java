@@ -6,7 +6,6 @@ package id.ac.uniska.pbo2.p06;
 
 /** 
  * Aturan validasi isian form tanpa GUI. 
-Modul Praktikum PBO 2 Pertemuan 6, halaman 4 dari 13 
  * Setiap method mengembalikan pesan kesalahan, atau null jika nilai sudah benar. 
  * Dipisahkan dari tampilan agar mudah diuji dengan JUnit (Pertemuan 13). 
  */ 
@@ -35,16 +34,19 @@ public final class Validator {
         return null; 
     } 
   
-    public static String nama(String nama) { 
-        String kosong = wajibDiisi(nama, "Nama"); 
-        if (kosong != null) { 
-            return kosong; 
-        } 
-        if (nama.trim().length() < 3) { 
-            return "Nama minimal 3 huruf"; 
-        } 
-        return null; 
-    } 
+    public static String nama(String nama) {
+        String kosong = wajibDiisi(nama, "Nama");
+        if (kosong != null) {
+            return kosong;
+        }
+        if (nama.matches(".*\\d.*")) {
+            return "Nama tidak boleh berisi angka";
+        }
+        if (nama.trim().length() < 3) {
+            return "Nama minimal 3 huruf";
+        }
+        return null;
+    }
   
     public static String email(String email) { 
         String kosong = wajibDiisi(email, "Email"); 

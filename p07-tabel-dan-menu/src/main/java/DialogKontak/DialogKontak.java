@@ -1,0 +1,179 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JDialog.java to edit this template
+ */
+package DialogKontak;
+
+public class DialogKontak extends javax.swing.JDialog {
+    
+    private Kontak hasil; // tetap null jika pengguna membatalkan 
+  
+/** 
+ * Membuat dialog tambah atau ubah kontak. 
+ * 
+ * @param pemilik jendela utama yang dikunci selama dialog terbuka 
+ * @param judul judul dialog, misalnya Tambah Kontak 
+ * @param awal kontak yang akan diubah, atau null untuk kontak baru 
+ */
+    
+    public DialogKontak(java.awt.Frame pemilik, String judul, Kontak awal) { 
+        super(pemilik, judul, true); // true berarti modal 
+        initComponents(); 
+  
+        if (awal != null) { 
+            namaField.setText(awal.nama()); 
+            teleponField.setText(awal.telepon()); 
+            emailField.setText(awal.email()); 
+            kategoriCombo.setSelectedItem(awal.kategori()); 
+        }    
+        emailField.putClientProperty("JTextField.placeholderText", "Boleh dikosongkan"); 
+        pesanLabel.putClientProperty("FlatLaf.styleClass", "small"); 
+        pesanLabel.setForeground(FlatLaf.isLafDark() 
+        ? new Color(0xFF8A80) : new Color(0xC62828)); 
+        getRootPane().setDefaultButton(simpanButton); 
+  
+        pack(); 
+        setLocationRelativeTo(pemilik); 
+    } 
+
+    @SuppressWarnings("unchecked")
+    // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
+    private void initComponents() {
+
+        formPanel = new javax.swing.JPanel();
+        labelPanel = new javax.swing.JPanel();
+        namLabel = new javax.swing.JLabel();
+        teleponLabel = new javax.swing.JLabel();
+        emailLabel = new javax.swing.JLabel();
+        kategoriLabel = new javax.swing.JLabel();
+        isianPanel = new javax.swing.JPanel();
+        namaField = new javax.swing.JTextField();
+        teleponField = new javax.swing.JTextField();
+        emailField = new javax.swing.JTextField();
+        kategoriCombo = new javax.swing.JComboBox<>();
+        bawahPanel = new javax.swing.JPanel();
+        pesanLabel = new javax.swing.JLabel();
+        tombolPanel = new javax.swing.JPanel();
+        batalButton = new javax.swing.JButton();
+        simpanButton = new javax.swing.JButton();
+
+        setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
+        setResizable(false);
+
+        formPanel.setBorder(javax.swing.BorderFactory.createEmptyBorder(16, 16, 8, 16));
+        formPanel.setLayout(new java.awt.BorderLayout(12, 0));
+
+        labelPanel.setLayout(new java.awt.GridLayout(0, 1, 0, 8));
+
+        namLabel.setLabelFor(namaField);
+        namLabel.setText("Nama :");
+        labelPanel.add(namLabel);
+
+        teleponLabel.setLabelFor(teleponField);
+        teleponLabel.setText("Nomor Telepon :");
+        labelPanel.add(teleponLabel);
+
+        emailLabel.setLabelFor(emailField);
+        emailLabel.setText("Email :");
+        labelPanel.add(emailLabel);
+
+        kategoriLabel.setText("Kategori :");
+        labelPanel.add(kategoriLabel);
+
+        formPanel.add(labelPanel, java.awt.BorderLayout.LINE_START);
+
+        isianPanel.setLayout(new java.awt.GridLayout(0, 1, 0, 8));
+        isianPanel.add(namaField);
+        isianPanel.add(teleponField);
+        isianPanel.add(emailField);
+
+        kategoriCombo.setModel(new 
+            javax.swing.DefaultComboBoxModel<>(Kategori.values()));
+        isianPanel.add(kategoriCombo);
+
+        formPanel.add(isianPanel, java.awt.BorderLayout.CENTER);
+
+        bawahPanel.setBorder(javax.swing.BorderFactory.createEmptyBorder(0, 16, 16, 16));
+        bawahPanel.setLayout(new java.awt.BorderLayout(8, 0));
+        bawahPanel.add(pesanLabel, java.awt.BorderLayout.NORTH);
+
+        tombolPanel.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.RIGHT, 8, 0));
+
+        batalButton.setText("Batal");
+        batalButton.addActionListener(this::batalButtonActionPerformed);
+        tombolPanel.add(batalButton);
+
+        simpanButton.setText("Simpan");
+        simpanButton.addActionListener(this::simpanButtonActionPerformed);
+        tombolPanel.add(simpanButton);
+
+        bawahPanel.add(tombolPanel, java.awt.BorderLayout.SOUTH);
+
+        formPanel.add(bawahPanel, java.awt.BorderLayout.PAGE_END);
+
+        getContentPane().add(formPanel, java.awt.BorderLayout.CENTER);
+
+        pack();
+    }// </editor-fold>//GEN-END:initComponents
+
+    private void batalButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_batalButtonActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_batalButtonActionPerformed
+
+    private void simpanButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_simpanButtonActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_simpanButtonActionPerformed
+
+    public static void main(String args[]) {
+        /* Set the Nimbus look and feel */
+        //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
+        /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
+         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
+         */
+        try {
+            for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
+                if ("Nimbus".equals(info.getName())) {
+                    javax.swing.UIManager.setLookAndFeel(info.getClassName());
+                    break;
+                }
+            }
+        } catch (ReflectiveOperationException | javax.swing.UnsupportedLookAndFeelException ex) {
+            logger.log(java.util.logging.Level.SEVERE, null, ex);
+        }
+        //</editor-fold>
+
+        /* Create and display the dialog */
+        java.awt.EventQueue.invokeLater(new Runnable() {
+            @Override
+            public void run() {
+                DialogKontak dialog = new DialogKontak(new javax.swing.JFrame(), true);
+                dialog.addWindowListener(new java.awt.event.WindowAdapter() {
+                    @Override
+                    public void windowClosing(java.awt.event.WindowEvent e) {
+                        System.exit(0);
+                    }
+                });
+                dialog.setVisible(true);
+            }
+        });
+    }
+
+    // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton batalButton;
+    private javax.swing.JPanel bawahPanel;
+    private javax.swing.JTextField emailField;
+    private javax.swing.JLabel emailLabel;
+    private javax.swing.JPanel formPanel;
+    private javax.swing.JPanel isianPanel;
+    private javax.swing.JComboBox<Kategori> kategoriCombo;
+    private javax.swing.JLabel kategoriLabel;
+    private javax.swing.JPanel labelPanel;
+    private javax.swing.JLabel namLabel;
+    private javax.swing.JTextField namaField;
+    private javax.swing.JLabel pesanLabel;
+    private javax.swing.JButton simpanButton;
+    private javax.swing.JTextField teleponField;
+    private javax.swing.JLabel teleponLabel;
+    private javax.swing.JPanel tombolPanel;
+    // End of variables declaration//GEN-END:variables
+}

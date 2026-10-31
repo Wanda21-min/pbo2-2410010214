@@ -344,7 +344,6 @@ public class FormAnggota extends javax.swing.JFrame {
         gridBagConstraints.insets = new java.awt.Insets(8, 0, 0, 12);
         formPanel.add(alamatLabel, gridBagConstraints);
 
-
         alamatArea.setColumns(20);
         alamatArea.setLineWrap(true);
         alamatArea.setRows(4);
