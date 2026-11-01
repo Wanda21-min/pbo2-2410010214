@@ -172,3 +172,47 @@ Tambahkan placeholder di NPM
 
 ## Tangkapan Layar Konfirmasi
 <img width="225" height="100" alt="Screenshot 2026-10-25 145814" src="https://github.com/user-attachments/assets/efd25c39-4b39-4cab-804f-4aecdfcff29e" />
+
+# P06
+## Beberapa kode dibantu AI
+## Hasil Peer Review
+| No. | Heuristik | Temuan | Skor (0–4) | Saran Perbaikan |
+|---:|---|---|:---:|---|
+| 1 | Visibilitas status sistem | Saat tombol Daftar ditekan dengan data yang belum lengkap, pesan kesalahan ditampilkan sehingga pengguna mengetahui bagian yang harus diperbaiki | 0 | Sudah sesuai |
+| 2 | Kesesuaian dengan dunia nyata | istilah pada form mudah dipahami dan sesuai dengan proses pendaftaran anggota perpustakaan | 0 | Pertahankan penggunaan istilah yang sederhana |
+| 3 | Kendali dan kebebasan pengguna | Tombol Batal sudah ada konfirmasi  | 0 | sudah sesuai |
+| 4 | Konsistensi dan standar | Ukuran tombol dan penulisan label sudah konsisten | 0 | Pertahankan konsistensi |
+| 5 | Pencegahan kesalahan | NPM sudah harus diisi dengan angka | 0 | Pertahankan |
+| 6 | Mengenali, bukan mengingat | Pilihan program studi tersedia langsung dalam ComboBox | 0 | Pertahankan |
+| 7 | Fleksibilitas dan efisiensi | belum semua tombol memiliki displayedMnemonic untuk akses keyboard | 2 | Tambahkan displayedMnemonic pada alamat |
+| 8 | Desain estetis dan minimalis | Tampilan form sederhana | 0 | Sudah minimalis |
+| 9 | Membantu memperbaiki kesalahan | Pesan kesalahan sudah menjelaskan cara memperbaiki input yang salah. | 0 | Sudah sesuai |
+| 10 | Bantuan dan dokumentasi | Petunjuk format NPM sudah sesuai  | 0 | Sudah sesuai |
+
+## Perbaikan Yang Saya Lakukan
+Menambahkan displayedMnemonic pada alamat :
+
+<img width="334" height="88" alt="Screenshot 2026-10-31 160411" src="https://github.com/user-attachments/assets/85c4d79a-0013-41f7-80df-3d468eeef4ce" />
+
+## Commit Perbaikan
+<img width="726" height="38" alt="Screenshot 2026-10-31 170329" src="https://github.com/user-attachments/assets/0317fee9-9f9d-427e-a3ff-4dac54aae6bb" />
+
+
+## Tangkapan Layar Pesan Kesalahan
+<img width="321" height="455" alt="Screenshot 2026-10-31 161613" src="https://github.com/user-attachments/assets/882d3cb8-6264-43f1-abaf-6aa210d4a3be" />
+
+## Tangkapan Layar Jendela Navigator Yang Memperlihatkan Label Pesan
+1. <img width="137" height="264" alt="Screenshot 2026-10-31 161948" src="https://github.com/user-attachments/assets/2df14019-0e9d-4125-beb5-159e9a91d244" />
+2. <img width="121" height="107" alt="Screenshot 2026-10-31 162008" src="https://github.com/user-attachments/assets/68f64e2c-04c9-4308-83c8-a7e16ef0e6a8" />
+
+## Jawaban Praktikum 4
+1. tidak ada huruf yang masuk, baris penyebabnya yaitu evt.consume() di dalam if (!Character.isDigit(evt.getKeyChar()) || penuh)
+2. pesan muncul saat isian kehilangan fokus, yaitu saat Tab ditekan
+3. Karena pengguna yang melewati isian tidak langsung ditandai salah
+4. Yang mendapatkan fokus adalah isian NPM
+5. Isian Nama yang mendapatkan fokus, yang mengaturnya adalah properti displayedMnemonic pada namaLabel
+6. Data tetap ada
+
+
+
+
