@@ -189,6 +189,10 @@ Tambahkan placeholder di NPM
 | 9 | Membantu memperbaiki kesalahan | Pesan kesalahan sudah menjelaskan cara memperbaiki input yang salah. | 0 | Sudah sesuai |
 | 10 | Bantuan dan dokumentasi | Petunjuk format NPM sudah sesuai  | 0 | Sudah sesuai |
 
+Nama Peninjau     : M.Hafiz Ilmi
+
+Nama Pemilik Form : Muhammad Ruwanda 
+
 ## Perbaikan Yang Saya Lakukan
 Menambahkan displayedMnemonic pada alamat :
 
