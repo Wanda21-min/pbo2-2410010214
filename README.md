@@ -217,6 +217,15 @@ Menambahkan displayedMnemonic pada alamat :
 5. Isian Nama yang mendapatkan fokus, yang mengaturnya adalah properti displayedMnemonic pada namaLabel
 6. Data tetap ada
 
-
-
+# P07
+## Beberapa kode dibantu AI
+## Jawaban Eksperimen Praktikum 5
+1. tabel tidak langsung berubah, karena JTable tidak diberi tahu dan tidak menggambar ulang
+2. dialog menampilkan “Hapus kontak Budi Santoso?”
+3. dialog menjadi non-modal, jadi jendela utama masih bisa diklik saat dialog terbuka
+4. perbaruiTombol() menonaktifkan ubahItem dan hapusItem, dan item menu yang nonaktif tidak menjalankan accelerator-nya
+5. baris setAccelerator berubah dari VK_D dengan CTRL_DOWN_MASK menjadi VK_DELETE
+6. pesan error IllegalArgumentException: Cannot set a null TableModel
+## Link Video Demo Mini Proyek
+** https://drive.google.com/file/d/1ZCIIsLj-6SgNgP10o6TuTVs6lx1s90SP/view?usp=sharing
 
