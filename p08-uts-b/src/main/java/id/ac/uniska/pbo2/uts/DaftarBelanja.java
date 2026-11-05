@@ -1,3 +1,6 @@
+// Nama : Muhammad Ruwanda
+// NPM  : 2410010214
+
 package id.ac.uniska.pbo2.uts;
 
 import com.formdev.flatlaf.FlatLaf;
@@ -7,8 +10,7 @@ import javax.swing.JComponent;
 import javax.swing.SwingConstants;
 import javax.swing.table.DefaultTableCellRenderer;
 
-// Nama : Muhammad Ruwanda
-// NPM  : 2410010214
+
 
 
 /**
