@@ -8,7 +8,7 @@ import java.util.List;
 import javax.swing.table.AbstractTableModel;
 
 /**
- * Menghubungkan daftar Barang dengan JTable, sekaligus menghitung total, diskon, dan bayar.
+ * Menghubungkan daftar Barang dengan JTable.
  */
 public class BarangTableModel extends AbstractTableModel {
 
@@ -70,7 +70,7 @@ public class BarangTableModel extends AbstractTableModel {
         return jumlah;
     }
 
-    /** Diskon = 10 persen dari total jika total minimal Rp100.000, dibulatkan ke bawah. */
+    /** Diskon. */
     public long diskon() {
         long total = total();
         return total >= DISKON_MINIMAL_TOTAL ? total * DISKON_PERSEN / 100 : 0;

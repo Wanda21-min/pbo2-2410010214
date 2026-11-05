@@ -14,11 +14,10 @@ import javax.swing.table.DefaultTableCellRenderer;
 
 
 /**
- * Jendela Daftar Belanja: form isian, tabel barang, dan ringkasan total, diskon, bayar.
+ * Jendela Daftar Belanja.
  */
 public class DaftarBelanja extends javax.swing.JFrame {
 
-    // Dibuat sebelum initComponents() karena dipakai sebagai model JTable
     private final BarangTableModel model = new BarangTableModel();
 
     /** Membuat form baru. */
@@ -213,7 +212,7 @@ public class DaftarBelanja extends javax.swing.JFrame {
         kembalikanKeAwal();
     }//GEN-LAST:event_bersihkanButtonActionPerformed
 
-    /** Memeriksa isian; jika valid, barang ditambahkan dan form dikembalikan ke keadaan awal. */
+    /** Memeriksa isian. */
     private void tambah() {
         String nama = namaField.getText().trim();
         String teksHarga = hargaField.getText().trim();
@@ -236,7 +235,7 @@ public class DaftarBelanja extends javax.swing.JFrame {
         perbaruiRingkasan();
     }
 
-    /** Menampilkan pesan kesalahan dan memindahkan kursor ke isian yang salah; isian lain tidak diubah. */
+    /** Menampilkan pesan kesalahan dan memindahkan kursor ke isian yang salah. */
     private void tolak(String pesan, JComponent isian) {
         pesanLabel.setText(pesan);
         isian.requestFocusInWindow();
@@ -258,7 +257,7 @@ public class DaftarBelanja extends javax.swing.JFrame {
                 + ", bayar " + Rupiah.format(model.bayar()));
     }
 
-    /** Merah yang mudah dibaca: lebih gelap di tema terang, lebih terang di tema gelap. */
+    /** Merah yang mudah dibaca. */
     static Color warnaKesalahan() {
         return FlatLaf.isLafDark() ? new Color(0xFF8A80) : new Color(0xC62828);
     }

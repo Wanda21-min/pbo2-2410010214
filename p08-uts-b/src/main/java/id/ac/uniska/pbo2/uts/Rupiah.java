@@ -7,7 +7,7 @@ import java.text.DecimalFormat;
 import java.text.DecimalFormatSymbols;
 
 /**
- * Format nilai uang sebagai rupiah, misalnya 125000 menjadi Rp125.000.
+ * Format nilai uang sebagai rupiah.
  */
 public final class Rupiah {
 

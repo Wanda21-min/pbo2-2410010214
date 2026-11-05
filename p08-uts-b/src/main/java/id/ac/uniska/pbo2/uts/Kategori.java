@@ -4,7 +4,7 @@
 package id.ac.uniska.pbo2.uts;
 
 /**
- * Kategori barang. Nilai dari toString() dipakai sebagai teks di JComboBox dan tabel.
+ * Kategori barang.
  */
 public enum Kategori {
     ALAT_TULIS("Alat Tulis"),
