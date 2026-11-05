@@ -7,9 +7,12 @@ import javax.swing.JComponent;
 import javax.swing.SwingConstants;
 import javax.swing.table.DefaultTableCellRenderer;
 
+// Nama : Muhammad Ruwanda
+// NPM  : 2410010214
+
+
 /**
  * Jendela Daftar Belanja: form isian, tabel barang, dan ringkasan total, diskon, bayar.
- * Perhitungan ada di Barang dan BarangTableModel; aturan isian ada di ValidatorBarang.
  */
 public class DaftarBelanja extends javax.swing.JFrame {
 
